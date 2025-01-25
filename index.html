@@ -14,6 +14,7 @@
           extend: {
             colors: {
               primary: "#ABEF5F", 
+              btncolor:"rgba(171, 239, 95, 0.50)",
             },
             fontFamily: {
               manrope: ['"Manrope"', "sans-serif"], 
@@ -22,12 +23,32 @@
         },
       };
     </script>
-    
+    <!-- Fontawesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <title>PlanNest</title>
   </head>
   <body class="font-manrope">
     <header>
+      <nav> 
+
+      </nav>
+
+      <!-- Hero Section -->
+<div class="container px-5 mx-auto flex flex-col items-center text-center space-y-3  md:space-y-6 py-12">
+  <img src="./assets/banner.png" alt="hero" class="w-full max-w-lg px-8 md:px-1">
+  <h1 class=" text-3xl md:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+  <p class="font-medium text-sm md:text-xl">
+    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+  </p>
+  <button class="btn bg-btncolor text-black px-8  h-16 w-auto rounded-[32px] flex items-center justify-center space-x-2 hover:bg-green-200">
+    <span class="text-center">View Details</span>
+    <i class="fas fa-arrow-right -rotate-45 bg-primary p-3 rounded-3xl"></i>
+  </button>
+  
+  
+  
+</div>
 
     </header>
 
