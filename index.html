@@ -190,7 +190,7 @@
             <!-- Card 1: Spans 3 columns on medium screens and above -->
             <div class="col-span-1 md:col-span-3 flex flex-col md:flex-row gap-x-6 rounded-2xl border border-[#E9E9E9] p-6">
               <div>
-                <img src="./assets/img1.png" class="rounded-2xl w-[200px] h-[150px] object-cover">
+                <img src="./assets/img1.png" class="rounded-2xl w-full h-full md:w-[200px] md:h-[150px] object-cover">
               </div>
               <div>
                 <h3 class="text-2xl font-extrabold mb-2">Commercial</h3>
@@ -207,18 +207,18 @@
 
             <!-- Card 2: Occupies 1 column -->
             <div class="col-span-1 rounded-2xl border border-[#E9E9E9] p-6">
-              <img src="./assets/img2.png" class="rounded-2xl w-[200px] h-[150px] object-cover">
+              <img src="./assets/img2.png" class="rounded-2xl w-full h-full md:w-[200px] md:h-[150px] object-cover">
             </div>
             
             <!-- Card 3: Occupies 1 column -->
             <div class="col-span-1 rounded-2xl border border-[#E9E9E9] p-6">
-              <img src="./assets/img3.png" class="rounded-2xl w-[200px] h-[150px] object-cover">
+              <img src="./assets/img3.png" class="rounded-2xl w-full h-full md:w-[200px] md:h-[150px] object-cover">
             </div>
 
             <!-- Card 4: Spans 2 columns on medium screens and above -->
             <div class="col-span-1 md:col-span-2 flex flex-col md:flex-row gap-x-6 rounded-2xl border border-[#E9E9E9] p-6">
               <div>
-                <img src="./assets/img4.png" class="rounded-2xl w-[200px] h-[150px] object-cover">
+                <img src="./assets/img4.png" class="rounded-2xl w-full h-full md:w-[200px] md:h-[150px] object-cover">
               </div>
               <div>
                 <h3 class="text-2xl font-extrabold mb-2">Commercial</h3>
@@ -234,15 +234,49 @@
             
             <!-- Card 5: Occupies 1 column -->
             <div class="col-span-1 rounded-2xl border border-[#E9E9E9] p-6">
-              <img src="./assets/img5.png" class="rounded-2xl w-[200px] h-[150px] object-cover">
+              <img src="./assets/img5.png" class="rounded-2xl w-full h-full md:w-[200px] md:h-[150px] object-cover">
             </div>
 
           </div>
 
-
-
         </div>
-
+        <!--Let’s Connect Section Start -->
+        <div class="bg-[url('./assets/bg.jpg')] bg-cover">
+          <div class="max-w-screen-xl mx-auto px-6 md:px-16 lg:px-28 pt-20 pb-20 ">
+              <div class="w-full flex flex-col items-center ">
+                  <button class="bg-btncolor px-4 py-2 rounded-3xl text-[16px] font-bold mx-auto md:mx-0 flex items-center gap-2">
+                      <i class="fas fa-arrow-right"></i> Let’s Connect
+                  </button>
+              </div>
+              <h3 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold pt-5 pb-5">
+                  Let’s Discuss Next Project
+              </h3>
+              <p class="text-center text-[16px] md:text-lg lg:text-xl font-medium pb-8">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+      
+              <!-- Responsive Form -->
+              <form class="space-y-4 w-full max-w-2xl mx-auto">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input type="text" placeholder="First Name*" 
+                          class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
+                      <input type="text" placeholder="Last Name*" 
+                          class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
+                      <input type="text" placeholder="Phone Number*" 
+                          class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
+                      <input type="email" placeholder="Email Number*" 
+                          class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
+                  </div>
+                  <textarea placeholder="Write your message here" 
+                      class="w-full px-5 py-[21px] rounded-[32px] border border-[#E9E9E9] bg-white textarea textarea-bordered h-32" required></textarea>
+                  <button class="btn w-full bg-btncolor text-black font-bold rounded-full py-3 text-lg flex items-center justify-center">
+                      Send Mail 
+                      <span class="ml-2 ">↗</span>
+                  </button>
+              </form>
+          </div>
+      </div>
+      
 
 
     </main>
