@@ -41,6 +41,44 @@
   </head>
   <body class="font-manrope">
     <header>
+      <!-- Nav bar -->
+      <nav class="max-w-screen-xl mx-auto px-6 md:px-16 lg:px-28 flex items-center justify-between pt-3">
+        <div class="flex items-center">
+            <a class="cursor-pointer text-3xl font-extrabold flex items-center " href="#">
+              <i
+              class="fas fa-arrow-right -rotate-45 bg-primary p-2 mr-2 rounded-3xl"
+            ></i>
+                Rinterio
+            </a>
+        </div>
+        <div class="hidden md:flex flex-1 justify-center space-x-6 text-gray-700 font-medium">
+            <a class="hover:text-black" href="#">Home</a>
+            <a class="hover:text-black" href="#">Services</a>
+            <a class="hover:text-black" href="#">Portfolio</a>
+            <a class="hover:text-black" href="#">Blogs</a>
+            <a class="hover:text-black" href="#">Contact Us</a>
+        </div>
+        <div class="hidden md:flex items-center gap-4">
+            <button class="flex items-center justify-center w-12 h-12 p-2 border rounded-full border-gray-300 bg-white">
+                <i class="fas fa-search text-gray-700"></i>
+            </button>
+            <button class="flex items-center justify-center w-12 h-12 p-2 border rounded-full border-gray-300 bg-white">
+                <i class="fas fa-shopping-cart text-gray-700"></i>
+            </button>
+            <button class="btn bg-primary text-black font-semibold hover:bg-green-500">
+                Book Consult <i
+                class="fas fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-3xl"
+              ></i>
+            </button>
+        </div>
+        <div class="md:hidden flex items-center">
+            <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
       <!-- Hero Section -->
       <div
         class="max-w-screen-xl mx-auto px-6 md:px-16 lg:px-28 flex flex-col items-center text-center space-y-6 py-12"
@@ -240,47 +278,157 @@
           </div>
 
         </div>
-        <!--Let’s Connect Section Start -->
-        <div class="bg-[url('./assets/bg.jpg')] bg-cover">
-          <div class="max-w-screen-xl mx-auto px-6 md:px-16 lg:px-28 pt-20 pb-20 ">
-              <div class="w-full flex flex-col items-center ">
-                  <button class="bg-btncolor px-4 py-2 rounded-3xl text-[16px] font-bold mx-auto md:mx-0 flex items-center gap-2">
-                      <i class="fas fa-arrow-right"></i> Let’s Connect
-                  </button>
-              </div>
-              <h3 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold pt-5 pb-5">
-                  Let’s Discuss Next Project
-              </h3>
-              <p class="text-center text-[16px] md:text-lg lg:text-xl font-medium pb-8">
-                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
-              </p>
-      
-              <!-- Responsive Form -->
-              <form class="space-y-4 w-full max-w-2xl mx-auto">
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <input type="text" placeholder="First Name*" 
-                          class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
-                      <input type="text" placeholder="Last Name*" 
-                          class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
-                      <input type="text" placeholder="Phone Number*" 
-                          class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
-                      <input type="email" placeholder="Email Number*" 
-                          class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
-                  </div>
-                  <textarea placeholder="Write your message here" 
-                      class="w-full px-5 py-[21px] rounded-[32px] border border-[#E9E9E9] bg-white textarea textarea-bordered h-32" required></textarea>
-                  <button class="btn w-full bg-btncolor text-black font-bold rounded-full py-3 text-lg flex items-center justify-center">
-                      Send Mail 
-                      <span class="ml-2 ">↗</span>
-                  </button>
-              </form>
+        
+      <!-- Additional Section -->
+      <div class="max-w-screen-xl mx-auto px-6 md:px-16 lg:px-28 space-y-6 mb-9">
+        <div class="w-full flex flex-col  items-center">
+          <button
+            class="bg-btncolor px-4 py-2 rounded-3xl text-[16px] font-bold mx-auto md:mx-0"
+          >
+            <i class="fas fa-arrow-right"></i> &nbsp Frequently Asked Questions
+          </button>
+        </div>
+
+        <h1 class="text-4xl font-bold text-center">Innovating Architecture & Civil Engineering</h1>
+        <p class="text-xl font-medium text-center">Discover how architecture and civil engineering shape our world, blending design with construction to create enduring structures and infrastructures.</p>
+        
+        <div class="accordion w-full max-w-md mx-auto space-y-4">
+          <!-- Question 1 -->
+          <div class="collapse collapse-plus rounded-lg border-2 border-lime-400 bg-lime-50">
+            <input type="checkbox" class="peer" />
+            <div class="collapse-title text-xl font-medium text-lime-600 peer-checked:text-lime-400 peer-checked:bg-lime-100 duration-300 ease-in-out">
+              What is Architecture?
+            </div>
+            <div class="collapse-content text-lime-700 peer-checked:text-lime-600 transition-all ease-in-out duration-500">
+              Architecture is the art and science of designing and constructing buildings and other physical structures.
+            </div>
           </div>
+          
+          <!-- Question 2 -->
+          <div class="collapse collapse-plus rounded-lg border-2 border-lime-400 bg-lime-50">
+            <input type="checkbox" class="peer" />
+            <div class="collapse-title text-xl font-medium text-lime-600 peer-checked:text-lime-400 peer-checked:bg-lime-100 duration-300 ease-in-out">
+              What is Civil Engineering?
+            </div>
+            <div class="collapse-content text-lime-700 peer-checked:text-lime-600 transition-all ease-in-out duration-500">
+              Civil engineering involves the design, construction, and maintenance of infrastructure such as roads, bridges, and buildings.
+            </div>
+          </div>
+          
+          <!-- Question 3 -->
+          <div class="collapse collapse-plus rounded-lg border-2 border-lime-400 bg-lime-50">
+            <input type="checkbox" class="peer" />
+            <div class="collapse-title text-xl font-medium text-lime-600 peer-checked:text-lime-400 peer-checked:bg-lime-100 duration-300 ease-in-out">
+              How do Architecture and Civil Engineering relate?
+            </div>
+            <div class="collapse-content text-lime-700 peer-checked:text-lime-600 transition-all ease-in-out duration-500">
+              Both fields are closely related as architecture designs the structures, and civil engineering ensures the structural integrity and functionality.
+            </div>
+          </div>
+          
+          <!-- Question 4 -->
+          <div class="collapse collapse-plus rounded-lg border-2 border-lime-400 bg-lime-50">
+            <input type="checkbox" class="peer" />
+            <div class="collapse-title text-xl font-medium text-lime-600 peer-checked:text-lime-400 peer-checked:bg-lime-100 duration-300 ease-in-out">
+              What are the key skills needed for Architecture and Civil Engineering?
+            </div>
+            <div class="collapse-content text-lime-700 peer-checked:text-lime-600 transition-all ease-in-out duration-500">
+              Creativity, technical proficiency, problem-solving, and understanding of materials, structure, and design are essential skills for both.
+            </div>
+          </div>
+          
+          <!-- Question 5 -->
+          <div class="collapse collapse-plus rounded-lg border-2 border-lime-400 bg-lime-50">
+            <input type="checkbox" class="peer" />
+            <div class="collapse-title text-xl font-medium text-lime-600 peer-checked:text-lime-400 peer-checked:bg-lime-100 duration-300 ease-in-out">
+              What are some exciting trends in Architecture and Civil Engineering?
+            </div>
+            <div class="collapse-content text-lime-700 peer-checked:text-lime-600 transition-all ease-in-out duration-500">
+              Innovations such as smart cities, sustainable designs, and advanced construction technologies are shaping the future of these fields.
+            </div>
+          </div>
+        </div>
       </div>
       
-
+    <!--Let’s Connect Section Start -->
+    <div class="bg-[url('./assets/bg.jpg')] bg-cover">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-16 lg:px-28 pt-20 pb-20 ">
+          <div class="w-full flex flex-col items-center ">
+              <button class="bg-btncolor px-4 py-2 rounded-3xl text-[16px] font-bold mx-auto md:mx-0 flex items-center gap-2">
+                  <i class="fas fa-arrow-right"></i> Let’s Connect
+              </button>
+          </div>
+          <h3 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold pt-5 pb-5">
+              Let’s Discuss Next Project
+          </h3>
+          <p class="text-center text-[16px] md:text-lg lg:text-xl font-medium pb-8">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+  
+          <!-- Responsive Form -->
+          <form class="space-y-4 w-full max-w-2xl mx-auto">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input type="text" placeholder="First Name*" 
+                      class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
+                  <input type="text" placeholder="Last Name*" 
+                      class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
+                  <input type="text" placeholder="Phone Number*" 
+                      class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
+                  <input type="email" placeholder="Email Number*" 
+                      class="w-full px-5 py-[21px] rounded-[64px] border border-[#E9E9E9] bg-white input input-bordered" required />
+              </div>
+              <textarea placeholder="Write your message here" 
+                  class="w-full px-5 py-[21px] rounded-[32px] border border-[#E9E9E9] bg-white textarea textarea-bordered h-32" required></textarea>
+              <button class="btn w-full bg-lime-400 text-black font-bold rounded-full py-3 text-lg flex items-center justify-center">
+                  Send Mail 
+                  <i
+              class="fas fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-3xl"
+            ></i>
+              </button>
+          </form>
+      </div>
+  </div>
+    
+    
+    
 
     </main>
 
-    <footer></footer>
+    <footer class="bg-black text-white py-10">
+      <div class="max-w-screen-2xl mx-auto px-6 md:px-16 lg:px-28 text-center">
+          <!-- Logo and Description -->
+          <div class="flex flex-col items-center">
+              <div class="flex items-center gap-2 text-lime-400 text-xl font-bold">
+                <i
+                class="fas fa-arrow-right -rotate-45 bg-primary text-black  p-1 rounded-3xl"
+              ></i> Rinterio
+              </div>
+              <p class="text-gray-400 max-w-md mt-2 text-[14px] md:text-[16px]">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, 
+                  featuring weathered wood, sleek metal accents.
+              </p>
+          </div>
+  
+          <!-- Navigation Links (Stacked on mobile, horizontal on larger screens) -->
+          <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 mt-6 text-[14px] md:text-[16px] font-medium">
+              <a href="#" class="hover:text-lime-400">Home</a>
+              <a href="#" class="hover:text-lime-400">Services</a>
+              <a href="#" class="hover:text-lime-400">Portfolio</a>
+              <a href="#" class="hover:text-lime-400">Blogs</a>
+              <a href="#" class="hover:text-lime-400">Contact Us</a>
+          </div>
+  
+          <!-- Call-to-Action Button -->
+          <div class="flex justify-center mt-6">
+              <button class="bg-lime-400 text-black font-bold rounded-full py-3 px-6 text-lg flex items-center gap-2">
+                  Book Consult <i
+                  class="fas fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-3xl"
+                ></i>
+              </button>
+          </div>
+      </div>
+  </footer>
+  
+  
   </body>
 </html>
